@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    style="@style/Screen" >
+
+    <TextView
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titel_thema_selectie" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	  
+        <ImageButton
+	        android:id="@+id/thuisButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:contentDescription="@string/thema_naam_thuis"
+	        android:src="@drawable/thuis" />
+	
+	   <ImageButton
+	       android:id="@+id/buitenButton"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:background="@null"
+	       android:contentDescription="@string/thema_naam_buiten"
+	       android:src="@drawable/buiten" />
+	
+	   <ImageButton
+	       android:id="@+id/werkButton"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:background="@null"
+	       android:contentDescription="@string/thema_naam_ophetwerk"
+	       android:src="@drawable/werk" />          
+	         
+    </LinearLayout>
+    
+
+   
+    <Button
+        android:id="@+id/homeButton"
+        style="@style/HomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

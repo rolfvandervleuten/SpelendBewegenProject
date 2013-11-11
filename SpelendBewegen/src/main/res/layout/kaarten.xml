@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kaarten"
+    style="@style/Screen" >
+
+    <TextView
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kies_kaart_text" />
+
+    <android.support.v4.view.ViewPager
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/viewpager1">
+        <FrameLayout
+            android:id="@+id/pager"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"></FrameLayout>
+    </android.support.v4.view.ViewPager>
+
+
+</FrameLayout>
