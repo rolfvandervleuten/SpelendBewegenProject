@@ -1,12 +1,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
- 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" android:layout_gravity="center_horizontal"/>
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="@dimen/card_padding">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/achtergrond">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" android:layout_gravity="center"
+            android:contentDescription=""
+            android:padding="@dimen/card_padding" />
+    </FrameLayout>
 
 </LinearLayout>

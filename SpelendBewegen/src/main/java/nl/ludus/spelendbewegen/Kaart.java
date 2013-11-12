@@ -23,8 +23,6 @@ public class Kaart extends Fragment{
         imageView.setImageResource(R.drawable.splash);
         imageView.setScaleType(ImageView.ScaleType.CENTER);
 
-        v.setBackgroundResource(R.drawable.achtergrond);
-
         v.setOnClickListener((Kaarten)this.getActivity());
 
         return v;

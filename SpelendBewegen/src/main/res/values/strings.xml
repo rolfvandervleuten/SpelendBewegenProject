@@ -10,4 +10,6 @@
 	<string name="thema_naam_ophetwerk">Op het werk</string>
     <string name="title_text_size">25dp</string>
     <string name="kies_kaart_text">Kies een kaart</string>
+    <string name="default_text_kaart">TextView</string>
+    <string name="text_terug">Terug</string>
 </resources>

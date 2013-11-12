@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/kaarten"
-    style="@style/Screen" >
+    android:background="@drawable/radialbackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <TextView
-        style="@style/TitleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/kies_kaart_text" />
-
-    <android.support.v4.view.ViewPager
-        android:layout_height="wrap_content"
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:id="@+id/viewpager1">
-        <FrameLayout
-            android:id="@+id/pager"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"></FrameLayout>
-    </android.support.v4.view.ViewPager>
+            android:text="@string/kies_kaart_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/kieskaart_titletext" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/viewpager1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/button"
+            android:layout_below="@+id/kieskaart_titletext">
+        </android.support.v4.view.ViewPager>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_button_height"
+            android:text="@string/text_terug"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
 
 
 </FrameLayout>

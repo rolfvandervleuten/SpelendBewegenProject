@@ -9,8 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class KaartAdapter extends FragmentStatePagerAdapter {
-	private Context context = null;
-    private ViewPager.LayoutParams layoutParams = new ViewPager.LayoutParams();
     private List<KaartAchterkant> kaarten;
 
 	public KaartAdapter(FragmentManager fm) {
